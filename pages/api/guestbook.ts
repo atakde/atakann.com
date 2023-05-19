@@ -21,6 +21,9 @@ export default async function handler(
         email,
         body: (req.body.body || '').slice(0, 500),
         created_by: name,
+        // mysql timestamp is in UTC
+        created_at: new Date().toISOString().slice(0, 19).replace('T', ' '),
+        updated_at: new Date().toISOString().slice(0, 19).replace('T', ' '),
       })
       .execute();
 
