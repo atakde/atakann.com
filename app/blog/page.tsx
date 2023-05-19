@@ -8,8 +8,14 @@ export const metadata: Metadata = {
 
 export const revalidate = 60;
 
+interface Post {
+  title: string;
+  link: string;
+  date: string;
+}
+
 export default async function BlogPage() {
-  let articles = [];
+  let articles = [] as Post[];
 
   try {
     const res = await fetch("https://nodejs-medium-fetcher.vercel.app/?username=atakde&limit=100&responseType=json");
