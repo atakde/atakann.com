@@ -56,10 +56,7 @@ export default async function HomePage() {
             <GitHubIcon />
             +40 public repositories
           </a>
-          <Link href="/blog" className="flex items-center">
-            <ViewsIcon />
-            +9000 monthly blog views on medium
-          </Link>
+          <Link href="/blog" className="flex items-center"><ViewsIcon />+9000 monthly blog views on medium</Link>
         </div>
       </div>
       <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200">
