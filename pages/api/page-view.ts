@@ -5,11 +5,6 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  // return empty image
-  res.setHeader("Content-Type", "image/svg+xml");
-  res.setHeader("Cache-Control", "s-maxage=1, stale-while-revalidate");
-  res.send('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1"></svg>');
-
   const slug = req.query.slug as string;
   const data = await queryBuilder
     .selectFrom("page_views")
@@ -30,5 +25,13 @@ export default async function handler(
       .execute();
   }
 
-  return res.status(200).json({ error: null });
+  // return empty image
+
+  res.setHeader("Content-Type", "image/svg+xml");
+  res.setHeader("Cache-Control", "public, max-age=0, must-revalidate");
+  res.setHeader("Pragma", "no-cache");
+
+  res.send(`
+        <svg xmlns="http://www.w3.org/2000/svg" width="1" height="1" />
+    `);
 }
