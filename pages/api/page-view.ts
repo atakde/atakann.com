@@ -29,4 +29,6 @@ export default async function handler(
       .values({ slug, count: 1 })
       .execute();
   }
+
+  return res.status(200).json({ error: null });
 }
