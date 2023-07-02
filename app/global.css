@@ -89,6 +89,11 @@ input[type='email'] {
   font-weight: inherit;
 }
 
+.gradient-title {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #FFED47 50%);
+  background-position: '50%';
+}
+
 table {
   display: block;
   max-width: fit-content;
