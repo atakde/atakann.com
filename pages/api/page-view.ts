@@ -5,7 +5,15 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const slug = req.query.slug as string;
+  let slug = req.query.slug as string;
+  const utmSource = req.query.utm_source as string;
+  const utmMedium = req.query.utm_medium as string;
+  const utmCampaign = req.query.utm_campaign as string;
+
+  if (utmSource && utmMedium && utmCampaign) {
+    slug = `${slug}?utm_source=${utmSource}&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}`;
+  }
+
   const data = await queryBuilder
     .selectFrom("page_views")
     .where("slug", "=", slug)

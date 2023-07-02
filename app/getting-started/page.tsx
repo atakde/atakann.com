@@ -34,7 +34,7 @@ export default function UsesPage() {
           <p className='text-lg leading-8 mt-2 text-gray-600'><a className='font-bold underline' href="https://atakde.medium.com" target='_blank'>Click here</a> to stay up to date on my latest blog posts. I am just starting out on Medium, so I would appreciate your support.</p>
         </div>
       </div>
-      <PageViewImage slug={'getting-started'} />
+      <PageViewImage />
     </section>
   );
 }
