@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import SubscribeForm from "./form";
+import PageViewImage from "app/getting-started/PageViewImage";
 
 export const metadata: Metadata = {
   title: 'Subscribe to Newsletter',
@@ -10,6 +11,7 @@ export default function UsesPage() {
   return (
     <section>
       <SubscribeForm />
+      <PageViewImage />
     </section>
   );
 }
