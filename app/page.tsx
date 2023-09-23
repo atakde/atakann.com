@@ -63,7 +63,10 @@ export default async function HomePage() {
         {bio()}
       </p>
       <p>
-        <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200"><span className='font-bold'>Last Side Project: </span><a target='_blank' rel='dofollow' href='https://www.creatorbook.io/carousel-generator'>Linkedin Carousel Generator</a></p>
+        <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200"><span className='font-bold'>Last Side Project: </span><a target='_blank' rel='dofollow' href='https://www.creatorbook.io'>CreatorBook</a></p>
+        <a className='hidden' target='_blank' rel='dofollow' href='https://www.creatorbook.io/ai-post-generation'>AI Post Generation</a>
+        <a className='hidden' target='_blank' rel='dofollow' href='https://www.creatorbook.io/carousel-generator'>Linkedin Carousel Generator</a>
+        <a className='hidden' target='_blank' rel='dofollow' href='https://www.creatorbook.io/viral-posts-inspirations'>Viral Posts Inspirations</a>
       </p>
       <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-500 dark:text-neutral-400">
         <li>
