@@ -20,7 +20,6 @@ export default async function BlogPage() {
   try {
     const res = await fetch("https://nodejs-medium-fetcher.vercel.app/?username=atakde&limit=100&responseType=json");
     articles = await res.json();
-    console.log(articles);
   } catch (error) {
     console.log(error);
   }

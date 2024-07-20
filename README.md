@@ -4,7 +4,6 @@
 Personal website made with Next 13.
 
 - Next 13
-- PlanetScale (Serverless MySQL)
 - Deployment: Vercel
 - Styling: Tailwind CSS
 

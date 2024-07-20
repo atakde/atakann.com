@@ -15,9 +15,6 @@ const navItems = {
   '/blog': {
     name: 'blog',
   },
-  // '/guestbook': {
-  //   name: 'guestbook',
-  // },
 };
 
 function Logo() {
@@ -47,7 +44,7 @@ function Logo() {
           }}
           d="M10,100 50,0 90,100 M30,50 L70,50"
           stroke="currentColor"
-          strokeWidth={12} // Increase the strokeWidth to make it bolder
+          strokeWidth={12}
         />
       </motion.svg>
     </Link>
