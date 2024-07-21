@@ -8,9 +8,6 @@ dependencies:
   '@vercel/analytics':
     specifier: ^0.1.11
     version: 0.1.11(react@18.2.0)
-  '@vercel/edge-config':
-    specifier: ^0.1.1
-    version: 0.1.1
   '@vercel/og':
     specifier: ^0.0.27
     version: 0.0.27
@@ -292,11 +289,6 @@ packages:
       react: ^16.8||^17||^18
     dependencies:
       react: 18.2.0
-    dev: false
-
-  /@vercel/edge-config@0.1.1:
-    resolution: {integrity: sha512-HDl+12tzW2RHIu8Y804kXg2VpZ02KVb7Nqsa+e1AFoACXXMb+7TfjI1wR19tXoDIu5enQz1dbat40YMEgaH13Q==}
-    engines: {node: '>=14.6'}
     dev: false
 
   /@vercel/og@0.0.27:

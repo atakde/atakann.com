@@ -18,7 +18,7 @@ export default async function BlogPage() {
   let articles = [] as Post[];
 
   try {
-    const res = await fetch("https://nodejs-medium-fetcher.vercel.app/?username=atakde&limit=100&responseType=json");
+    const res = await fetch("https://nodejs-medium-fetcher.vercel.app/?username=atakde&limit=10&responseType=json");
     articles = await res.json();
   } catch (error) {
     console.log(error);

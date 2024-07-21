@@ -1,5 +1,3 @@
-const { get } = require('@vercel/edge-config');
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
@@ -17,11 +15,13 @@ const nextConfig = {
     appDir: true,
   },
   redirects() {
-    try {
-      return get('redirects');
-    } catch {
-      return [];
-    }
+    return [
+      {
+        source: '/medium',
+        destination: 'https://atakde.medium.com/',
+        permanent: true,
+      },
+    ];
   },
   headers() {
     return [
